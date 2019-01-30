@@ -41,8 +41,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'javascript', label: '前端'},
-    {doc: 'algorithm', label: '算法'},
+    {doc: 'javascript-desc', label: '前端'},
+    {doc: 'algorithm-desc', label: '算法'},
     // {page: 'help', label: 'Help'},
     // {blog: false, label: 'Blog'},
     {href: 'https://yl.frontjs.cc', label: 'Blog'},

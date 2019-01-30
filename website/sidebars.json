@@ -1,14 +1,14 @@
 {
   "docs": {
-    "介绍": ["javascript"],
-    "JavaScript高级程序设计": [
-      "js-advanced-programming/variable-scope"
+    "介绍": ["javascript-desc"],
+    "JavaScript": [
+      "javascript/basic-concept"
     ]
   },
   "algorithm": {
-    "介绍": ["algorithm"],
+    "介绍": ["algorithm-desc"],
     "排序": [
-      "algorithms/quick-sort"
+      "algorithm/quick-sort"
     ]
 
   }

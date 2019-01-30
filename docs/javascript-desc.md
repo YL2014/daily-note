@@ -1,5 +1,5 @@
 ---
-id: javascript
+id: javascript-desc
 title: 关于笔记
 ---
 
