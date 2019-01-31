@@ -48,10 +48,15 @@ null.toString() // Uncaught TypeError: Cannot read property 'toString' of null
 String(null) // 'null'
 ```
 
-## 逗号操作符
+## 操作符
+
+### 逗号操作符
 ```js
 var num = (5, 1, 4, 8, 0) // 0，在用于赋值时，逗号操作符总会返回表达式中的最后一项
 ```
+
+### 位操作符
+待整理
 
 ## for in
 遍历对象，如果是数组，则 `key` 为数组的索引
