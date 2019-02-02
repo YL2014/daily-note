@@ -2,7 +2,8 @@
   "docs": {
     "介绍": ["javascript-desc"],
     "JavaScript": [
-      "javascript/basic-concept"
+      "javascript/basic-concept",
+      "javascript/reference-type"
     ]
   },
   "algorithm": {
