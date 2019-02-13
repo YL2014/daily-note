@@ -3,6 +3,7 @@
     "介绍": ["javascript-desc"],
     "JavaScript": [
       "javascript/basic-concept",
+      "javascript/variable-scope",
       "javascript/reference-type"
     ]
   },
