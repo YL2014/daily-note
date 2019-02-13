@@ -4,7 +4,9 @@
     "JavaScript": [
       "javascript/basic-concept",
       "javascript/variable-scope",
-      "javascript/reference-type"
+      "javascript/reference-type",
+      "javascript/oop",
+      "javascript/function"
     ]
   },
   "algorithm": {

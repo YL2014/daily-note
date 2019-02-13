@@ -114,5 +114,56 @@ var sum = new Function('num1', 'num2', 'return num1 + num2')
 ```
 不推荐这样定义函数，会导致两次解析，第一次是常规的代码解析，第二次是解析传入的函数体字符串，从而影响性能
 
+### 属性和方法
 
+- length: 参数的长度
 
+- prototype: ECMAScript中的引用类型，`prototype` 是保存它们所有实例方法的真正所在，诸如`toString()`和`valueOf()`等方法实际上都保存在`prototype` 名下，只不过是通过各自对象的实例访问罢了。在ECMAScript 5 中，`prototype` 属性是不可枚举的，因此使用`for-in` 无法发现
+
+- call, apply, bind
+
+- 每个函数继承的`toLocaleString()`和`toString()`方法始终都返回函数的代码。返回代码的格式则因浏览器而异。另外一个继承的`valueOf()`方法同样也只返回函数代码。
+
+## 基本包装类型
+
+Boolean、Number、String
+
+每当读取一个基本类型值的时候，后台就会创建一个对应的基本包装类型的对象，从而让我们能够调用一些方法来操作这些数据
+
+引用类型与基本包装类型的主要区别就是对象的生存期。使用new 操作符创建的引用类型的实例，在执行流离开当前作用域之前都一直保存在内存中。而自动创建的基本包装类型的对象，则只存在于一行代码的执行瞬间，然后立即被销毁。这意味着我们不能在运行时为基本类型值添加属性和方法
+
+### Boolean
+
+```js
+var falseObject = new Boolean(false)
+var falseValue = false
+
+alert(typeof falseObject); //object
+alert(typeof falseValue); //boolean
+alert(falseObject instanceof Boolean); //true
+alert(falseValue instanceof Boolean); //false
+```
+
+### Number
+
+```js
+var numberObject = new Number(10)
+var numberValue = 10
+
+alert(typeof numberObject); //"object"
+alert(typeof numberValue); //"number"
+alert(numberObject instanceof Number); //true
+alert(numberValue instanceof Number); //false
+```
+
+### String
+
+```js
+var stringValue = "hello world";
+alert(stringValue.slice(3)); //"lo world"
+alert(stringValue.substring(3)); //"lo world"
+alert(stringValue.substr(3)); //"lo world"
+alert(stringValue.slice(3, 7)); //"lo w"
+alert(stringValue.substring(3,7)); //"lo w"
+alert(stringValue.substr(3, 7)); //"lo worl"
+```
